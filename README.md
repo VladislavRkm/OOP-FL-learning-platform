@@ -415,7 +415,7 @@ response:
 
 
 
-### **Регистрация пользователя - POST /api/students/**
+### **Регистрация пользователя - POST /api/signup/**
 
 ```json
 request:
@@ -437,7 +437,7 @@ response:
 
 
 
-### **Авторизация пользователя - POST /api/students/login/**
+### **Авторизация пользователя - POST /api/login/**
 
 ```json
 request:
