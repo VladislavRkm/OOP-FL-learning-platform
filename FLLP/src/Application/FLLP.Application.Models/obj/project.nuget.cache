@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "qoBRl17ekpDbaUG0XDyBl1S53WXaaDls0ijGzZkX53MiMLJjDr9H4WzERW/uUMyijKYHOiWI/TpHCukz1gJRfQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\m.ivchik\\Documents\\00 programming\\c#\\OOP-FL-learning-platform\\FLLP\\src\\Application\\FLLP.Application.Models\\FLLP.Application.Models.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\m.ivchik\\.nuget\\packages\\itmo.dev.editorconfig\\1.0.2\\itmo.dev.editorconfig.1.0.2.nupkg.sha512",
+    "C:\\Users\\m.ivchik\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\6.0.0\\microsoft.bcl.asyncinterfaces.6.0.0.nupkg.sha512",
+    "C:\\Users\\m.ivchik\\.nuget\\packages\\stylecop.analyzers\\1.2.0-beta.435\\stylecop.analyzers.1.2.0-beta.435.nupkg.sha512",
+    "C:\\Users\\m.ivchik\\.nuget\\packages\\stylecop.analyzers.unstable\\1.2.0.435\\stylecop.analyzers.unstable.1.2.0.435.nupkg.sha512",
+    "C:\\Users\\m.ivchik\\.nuget\\packages\\system.linq.async\\6.0.1\\system.linq.async.6.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}
