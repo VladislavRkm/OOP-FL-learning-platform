@@ -1,43 +1,41 @@
 # OOP-FL-learning-platform
 
-Эта строчка добавлена в vs
+# OOP-FL-learning-platform
+Сертификат(Certificate):
 
-����������(Certificate):
+Идентификатор сертификата (CertificateId)
+Идентификатор пользователя, который его получает (UserId)
+Идентификатор курса, по которому выдаётся сертификат (CourseId)Процент выполненной работы по курсу (PercentOfPassed) 
 
-������������� ����������� (CertificateId)
-������������� ������������, ������� ��� �������� (UserId)
-������������� �����, �� �������� ������� ���������� (CourseId)
-������� ����������� ������ �� ����� (PercentOfPassed) 
+Курс(Course): 
 
-����(Course): 
+Идентификатор(CourseId)
+Название(Title)
+Описание(Description)
+Идентификатор автора (AuthorId)
+Код языка (LanguageCode)
+Дата создания курса (CreatedDate)
+Уровень сложности(DifficultyLevel)
 
-�������������(CourseId)
-��������(Title)
-��������(Description)
-������������� ������ (AuthorId)
-��� ����� (LanguageCode)
-���� �������� ����� (CreatedDate)
-������� ���������(DifficultyLevel)
+Урок(Lesson): 
 
-����(Lesson): 
- 
-�������������(LessonId)
-��������(Title)
-�������� �����(Content)
-������������� �����, � �������� ��������� ���� (CourseId)
+Идентификатор(LessonId)
+Название(Title)
+Материал урока(Content)
+Идентификатор Курса, к которому относится урок (CourseId)
 
-���������� ����(LessonPassed):
+Пройденный урок(LessonPassed):
 
-������������� �������� ����� (LessonPassedId)
-������������� ����� (LessonId)
-������������� ������������, ������� �������� ���� (UserId)
-����, ����� ������������ �������� ���� (LessonPassedDate)
+Идентификатор сданного урока (LessonPassedId)
+Идентификатор урока (LessonId)
+Идентификатор пользователя, который выполнил урок (UserId)
+Дата, когда пользователь закончил урок (LessonPassedDate)
 
-������������(User):
+Пользователь(User):
 
-�������������(UserId)
-���(FirstName)
-�������(LastName)
-����������� �����(Email)
-������(Password)
-���� �����������(RegistrationDate)
+Идентификатор(UserId)
+Имя(FirstName)
+Фамилия(LastName)
+Электронная почта(Email)
+Пароль(Password)
+Дата регистрации(RegistrationDate)
