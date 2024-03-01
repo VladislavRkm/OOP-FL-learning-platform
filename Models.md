@@ -1,5 +1,7 @@
 # OOP-FL-learning-platform
 
+Описание моделей БД
+
 Сертификат(Certificate):
 
 Идентификатор сертификата (CertificateId)
