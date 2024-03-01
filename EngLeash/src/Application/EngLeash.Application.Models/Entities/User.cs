@@ -1,12 +1,3 @@
-/*Идентификатор(UserId)
-Имя(FirstName)
-Фамилия(LastName)
-Электронная почта(Email)
-Пароль(Password)
-Дата регистрации(RegistrationDate)
-*/
-
-
 public class User
 {
     public int UserId { get; set; }

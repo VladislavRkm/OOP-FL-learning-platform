@@ -1,15 +1,3 @@
-/*Курс(Course): 
- 
-Идентификатор(CourseId)
-Название(Title)
-Описание(Description)
-Идентификатор автора (AuthorId)
-Код языка (LanguageCode)
-Дата создания курса (CreatedDate)
-Уровень сложности(DifficultyLevel)
-*/
-
-
 public class Course
 {
     public int CourseId { get; set; }
