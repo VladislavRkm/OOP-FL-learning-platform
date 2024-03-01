@@ -1,8 +1,6 @@
 # OOP-FL-learning-platform
 
-Эта строчка добавлена в VS code
-
-�������� ������� ��
+Эта строчка добавлена в vs
 
 ����������(Certificate):
 
