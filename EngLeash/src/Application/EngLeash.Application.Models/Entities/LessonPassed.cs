@@ -4,4 +4,5 @@ public class LessonPassed
 	public int LessonId { get; set; }
 	public int UserId { get; set; }
 	public DateTime LessonPassedDate { get; set; }
+	public bool LessonIsPassed { get; set; }
 }
