@@ -1,12 +1,12 @@
 # OOP-FL-learning-platform
 ***
-## 18. Онлайн-платформа для обучения иностранным языкам
+# 18. РћРЅР»Р°Р№РЅ-РїР»Р°С‚С„РѕСЂРјР° РґР»СЏ РѕР±СѓС‡РµРЅРёСЏ РёРЅРѕСЃС‚СЂР°РЅРЅС‹Рј СЏР·С‹РєР°Рј
 ![](OIG3.jpg)
 ***
-__Команда:__ Александров Виктор Денисович, Ивчик Михаил Юрьевич, Мордовкин Максим Михайлович,
-Рахманов Владислав Алексеевич, Рудникова Виктория Олеговна
+__РљРѕРјР°РЅРґР°:__ РђР»РµРєСЃР°РЅРґСЂРѕРІ Р’РёРєС‚РѕСЂ Р”РµРЅРёСЃРѕРІРёС‡, РРІС‡РёРє РњРёС…Р°РёР» Р®СЂСЊРµРІРёС‡, РњРѕСЂРґРѕРІРєРёРЅ РњР°РєСЃРёРј РњРёС…Р°Р№Р»РѕРІРёС‡,
+Р Р°С…РјР°РЅРѕРІ Р’Р»Р°РґРёСЃР»Р°РІ РђР»РµРєСЃРµРµРІРёС‡, Р СѓРґРЅРёРєРѕРІР° Р’РёРєС‚РѕСЂРёСЏ РћР»РµРіРѕРІРЅР° 
 ***
-## Доменные сущности:
+# Р”РѕРјРµРЅРЅС‹Рµ СЃСѓС‰РЅРѕСЃС‚Рё:
 
 ```
 public class User
@@ -69,10 +69,13 @@ public class Instructor
 ## ERD:
 ![](EngLeash.drawio.png)
 ***
-## Методы для работы с курсами, уроками, студентами и преподавателями.
-## Регистрация, авторизация и просмотр профиля
+# РњРµС‚РѕРґС‹ API
 
-### **Регистрация пользователя - POST /api/signup/**
+РњРµС‚РѕРґС‹ РґР»СЏ СЂР°Р±РѕС‚С‹ СЃ РєСѓСЂСЃР°РјРё, СѓСЂРѕРєР°РјРё, СЃС‚СѓРґРµРЅС‚Р°РјРё Рё РїСЂРµРїРѕРґР°РІР°С‚РµР»СЏРјРё.
+
+## Р РµРіРёСЃС‚СЂР°С†РёСЏ, Р°РІС‚РѕСЂРёР·Р°С†РёСЏ Рё РїСЂРѕСЃРјРѕС‚СЂ РїСЂРѕС„РёР»СЏ
+
+### **Р РµРіРёСЃС‚СЂР°С†РёСЏ РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ - POST /api/signup/**
 
 ```json
 request:
@@ -89,7 +92,7 @@ response:
 }
 ```
 
-### **Авторизация пользователя - POST /api/login/**
+### **РђРІС‚РѕСЂРёР·Р°С†РёСЏ РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ - POST /api/login/**
 
 ```json
 request:
@@ -104,7 +107,7 @@ response:
 }
 ```
 
-### **Получение информации о пользователе - GET /api/users/user_id/**
+### **РџРѕР»СѓС‡РµРЅРёРµ РёРЅС„РѕСЂРјР°С†РёРё Рѕ РїРѕР»СЊР·РѕРІР°С‚РµР»Рµ - GET /api/users/user_id/**
 
 ```json
 request:
@@ -122,7 +125,7 @@ response:
 }
 ```
 
-### **Мой профиль - GET /api/my_profile/**
+### **РњРѕР№ РїСЂРѕС„РёР»СЊ - GET /api/my_profile/**
 
 ```json
 request:
@@ -139,7 +142,7 @@ response:
 }
 ```
 
-### **Мои курсы - GET /api/my_profile/my_courses/**
+### **РњРѕРё РєСѓСЂСЃС‹ - GET /api/my_profile/my_courses/**
 
 ```json
 request:
@@ -159,7 +162,7 @@ response:
 }
 ```
 
-### **Мои сертификаты - GET /api/my_profile/my_certificates/**
+### **РњРѕРё СЃРµСЂС‚РёС„РёРєР°С‚С‹ - GET /api/my_profile/my_certificates/**
 
 ```json
 request:
@@ -179,7 +182,7 @@ response:
 }
 ```
 
-### **Мои авторские курсы - GET /api/my_profile/my_authorship/**
+### **РњРѕРё Р°РІС‚РѕСЂСЃРєРёРµ РєСѓСЂСЃС‹ - GET /api/my_profile/my_authorship/**
 
 ```json
 request:
@@ -200,7 +203,7 @@ response:
 ```
 
 
-### **Редактирование профиля - PUT /api/my_profile/edit_profile/**
+### **Р РµРґР°РєС‚РёСЂРѕРІР°РЅРёРµ РїСЂРѕС„РёР»СЏ - PUT /api/my_profile/edit_profile/**
 
 ```json
 request:
@@ -217,7 +220,7 @@ response:
 }
 ```
 
-### **Удаление профиля - DELETE /api/my_profile/delete_profile/**
+### **РЈРґР°Р»РµРЅРёРµ РїСЂРѕС„РёР»СЏ - DELETE /api/my_profile/delete_profile/**
 
 ```json
 request:
@@ -231,9 +234,9 @@ response:
 ```
 
 
-## Поиск курсов, уроков и студентов
+## РџРѕРёСЃРє РєСѓСЂСЃРѕРІ, СѓСЂРѕРєРѕРІ Рё СЃС‚СѓРґРµРЅС‚РѕРІ
 
-### **Получение списка курсов - GET /api/courses/**
+### **РџРѕР»СѓС‡РµРЅРёРµ СЃРїРёСЃРєР° РєСѓСЂСЃРѕРІ - GET /api/courses/**
 
 ```json
 request:
@@ -266,7 +269,7 @@ response:
 }
 ```
 
-### **Получение курса по названию - GET /api/courses/course_id**
+### **РџРѕР»СѓС‡РµРЅРёРµ РєСѓСЂСЃР° РїРѕ РЅР°Р·РІР°РЅРёСЋ - GET /api/courses/course_id**
 
 ```json
 request:
@@ -286,7 +289,7 @@ response:
 }
 ```
 
-### **Получение курса по id - GET /api/courses/course_id**
+### **РџРѕР»СѓС‡РµРЅРёРµ РєСѓСЂСЃР° РїРѕ id - GET /api/courses/course_id**
 
 ```json
 request:
@@ -306,7 +309,7 @@ response:
 }
 ```
 
-### **Получение урока по id - GET /api/lessons/lesson_id**
+### **РџРѕР»СѓС‡РµРЅРёРµ СѓСЂРѕРєР° РїРѕ id - GET /api/lessons/lesson_id**
 
 ```json
 request:
@@ -323,7 +326,7 @@ response:
 }
 ```
 
-### **Получение списка уроков по id курса - GET /api/lessons/course_id**
+### **РџРѕР»СѓС‡РµРЅРёРµ СЃРїРёСЃРєР° СѓСЂРѕРєРѕРІ РїРѕ id РєСѓСЂСЃР° - GET /api/lessons/course_id**
 
 ```json
 request:
@@ -345,7 +348,7 @@ response:
 }
 ```
 
-### **Получение списка пройденных уроков по id пользователя - GET /api/lessons/user_id**
+### **РџРѕР»СѓС‡РµРЅРёРµ СЃРїРёСЃРєР° РїСЂРѕР№РґРµРЅРЅС‹С… СѓСЂРѕРєРѕРІ РїРѕ id РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ - GET /api/lessons/user_id**
 
 ```json
 request:
@@ -367,7 +370,7 @@ response:
 }
 ```
 
-### **Получение списка студентов курса - GET /api/courses/course_id/students/**
+### **РџРѕР»СѓС‡РµРЅРёРµ СЃРїРёСЃРєР° СЃС‚СѓРґРµРЅС‚РѕРІ РєСѓСЂСЃР° - GET /api/courses/course_id/students/**
 
 ```json
 request:
@@ -387,7 +390,7 @@ response:
 }
 ```
 
-### **Получение автора курса - GET /api/courses/course_id/author/**
+### **РџРѕР»СѓС‡РµРЅРёРµ Р°РІС‚РѕСЂР° РєСѓСЂСЃР° - GET /api/courses/course_id/author/**
 
 ```json
 request:
@@ -402,7 +405,7 @@ response:
 }
 ```
 
-### **Получение списка курсов автора - GET /api/courses/author_id/courses**
+### **РџРѕР»СѓС‡РµРЅРёРµ СЃРїРёСЃРєР° РєСѓСЂСЃРѕРІ Р°РІС‚РѕСЂР° - GET /api/courses/author_id/courses**
 
 ```json
 request:
@@ -423,9 +426,9 @@ response:
 }
 ```
 
-## Создание и редактирование курсов
+## РЎРѕР·РґР°РЅРёРµ Рё СЂРµРґР°РєС‚РёСЂРѕРІР°РЅРёРµ РєСѓСЂСЃРѕРІ
 
-### **Создание курса - POST /api/courses/add_course**
+### **РЎРѕР·РґР°РЅРёРµ РєСѓСЂСЃР° - POST /api/courses/add_course**
 
 ```json
 request:
@@ -443,7 +446,7 @@ response:
 }
 ```
 
-### **Редактирование курса - PUT /api/courses/course_id/edit_course**
+### **Р РµРґР°РєС‚РёСЂРѕРІР°РЅРёРµ РєСѓСЂСЃР° - PUT /api/courses/course_id/edit_course**
 
 ```json
 request:
@@ -462,7 +465,7 @@ response:
 }
 ```
 
-### **Удаление курса - DELETE /api/courses/course_id/delete_course**
+### **РЈРґР°Р»РµРЅРёРµ РєСѓСЂСЃР° - DELETE /api/courses/course_id/delete_course**
 
 ```json
 request:
@@ -477,7 +480,7 @@ response:
 ```
 
 
-### **Создание урока на курсе - POST /api/courses/course_id/lessons/add_lesson**
+### **РЎРѕР·РґР°РЅРёРµ СѓСЂРѕРєР° РЅР° РєСѓСЂСЃРµ - POST /api/courses/course_id/lessons/add_lesson**
 
 ```json
 request:
@@ -493,7 +496,7 @@ response:
 }
 ```
 
-### **Редактирование урока - PUT /api/courses/course_id/lessons/edit_lesson**
+### **Р РµРґР°РєС‚РёСЂРѕРІР°РЅРёРµ СѓСЂРѕРєР° - PUT /api/courses/course_id/lessons/edit_lesson**
 
 ```json
 request:
@@ -510,7 +513,7 @@ response:
 }
 ```
 
-### **Удаление урока - DELETE /api/courses/course_id/lessons/delete_lesson**
+### **РЈРґР°Р»РµРЅРёРµ СѓСЂРѕРєР° - DELETE /api/courses/course_id/lessons/delete_lesson**
 
 ```json
 request:
@@ -524,24 +527,9 @@ response:
 }
 ```
 
-## Обучение на курсе
+## РћР±СѓС‡РµРЅРёРµ РЅР° РєСѓСЂСЃРµ
 
-### **Поступление на курс - POST /api/courses/course_id/apply**
-
-```json
-request:
-{
-    "courseId": 1,
-    "userId": 1
-}
-
-response:
-{
-    "status": "ok"
-}
-```
-
-### **Отчисление с курса - DELETE /api/courses/course_id/leave**
+### **РџРѕСЃС‚СѓРїР»РµРЅРёРµ РЅР° РєСѓСЂСЃ - POST /api/courses/course_id/apply**
 
 ```json
 request:
@@ -556,8 +544,23 @@ response:
 }
 ```
 
+### **РћС‚С‡РёСЃР»РµРЅРёРµ СЃ РєСѓСЂСЃР° - DELETE /api/courses/course_id/leave**
 
-### **Прохождение урока - POST /api/lessons/lesson_id/submit**
+```json
+request:
+{
+    "courseId": 1,
+    "userId": 1
+}
+
+response:
+{
+    "status": "ok"
+}
+```
+
+
+### **РџСЂРѕС…РѕР¶РґРµРЅРёРµ СѓСЂРѕРєР° - POST /api/lessons/lesson_id/submit**
 
 ```json
 request:
@@ -572,7 +575,7 @@ response:
 }
 ```
 
-### **Загрузка сертификата - GET /api/courses/course_id/certificates/download_certificate**
+### **Р—Р°РіСЂСѓР·РєР° СЃРµСЂС‚РёС„РёРєР°С‚Р° - GET /api/courses/course_id/certificates/download_certificate**
 
 ```json
 request:
@@ -587,25 +590,10 @@ response:
 }
 ```
 
-## Управление студентами на авторском курсе
+## РЈРїСЂР°РІР»РµРЅРёРµ СЃС‚СѓРґРµРЅС‚Р°РјРё РЅР° Р°РІС‚РѕСЂСЃРєРѕРј РєСѓСЂСЃРµ
 
 
-### **Добавление студента на курс - POST /api/courses/course_id/students/add_student**
-
-```json
-request:
-{
-    "courseId": 1,
-    "userId": 1
-}
-
-response:
-{
-    "status": "ok"
-}
-```
-
-### **Удаление студента с курса - DELETE /api/courses/course_id/students/delete_student**
+### **Р”РѕР±Р°РІР»РµРЅРёРµ СЃС‚СѓРґРµРЅС‚Р° РЅР° РєСѓСЂСЃ - POST /api/courses/course_id/students/add_student**
 
 ```json
 request:
@@ -620,7 +608,22 @@ response:
 }
 ```
 
-### **Выдача сертификата - POST /api/courses/course_id/certificates/give_certificate**
+### **РЈРґР°Р»РµРЅРёРµ СЃС‚СѓРґРµРЅС‚Р° СЃ РєСѓСЂСЃР° - DELETE /api/courses/course_id/students/delete_student**
+
+```json
+request:
+{
+    "courseId": 1,
+    "userId": 1
+}
+
+response:
+{
+    "status": "ok"
+}
+```
+
+### **Р’С‹РґР°С‡Р° СЃРµСЂС‚РёС„РёРєР°С‚Р° - POST /api/courses/course_id/certificates/give_certificate**
 
 ```json
 request:
@@ -635,4 +638,5 @@ response:
     "status": "ok"
 }
 ```
+
 ***
