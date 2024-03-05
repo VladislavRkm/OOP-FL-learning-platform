@@ -1,4 +1,4 @@
 public interface ICertificate
 {
-	public void CreateCertificate { }
+	public void CreateCertificate() { }
 }
