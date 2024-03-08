@@ -1,4 +1,4 @@
-public interface ICourseSurvice
+public interface ICourseService
 {
     Course CreateCourse(string title, string description, int AuthorId, string languageCode, DateTime createdDate, string difficultyLevel);
     Course UpdateCourse(string title, string description, int AuthorId, string languageCode, string difficultyLevel);

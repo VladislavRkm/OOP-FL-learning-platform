@@ -1,4 +1,4 @@
-public interface ILessonSurvice
+public interface ILessonService
 {
     Lesson CreateLesson(string title, string content, int courseId);
     Lesson EditLesson(int lessonId, string title, string content, int courseId);
