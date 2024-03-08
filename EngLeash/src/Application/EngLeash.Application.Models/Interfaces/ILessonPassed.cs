@@ -1,4 +1,4 @@
 public interface ILessonPassed
 {
-	public void PassTheLesson() { }
+	bool PassTheLesson(int LessonId, int UserId, DateTime LessonPassedDate);
 }

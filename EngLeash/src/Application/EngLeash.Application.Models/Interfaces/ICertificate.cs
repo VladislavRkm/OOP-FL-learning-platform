@@ -1,4 +1,4 @@
 public interface ICertificate
 {
-	public void CreateCertificate() { }
+	string CreateCertificate(int UserId, int CourseId);
 }
