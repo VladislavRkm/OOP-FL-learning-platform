@@ -1,4 +1,4 @@
-public interface ILessonPassed
+public interface ILessonPassedService
 {
-	bool PassTheLesson(int LessonId, int UserId, DateTime LessonPassedDate);
+	LessonPassed PassTheLesson(int LessonId, int UserId, DateTime LessonPassedDate);
 }

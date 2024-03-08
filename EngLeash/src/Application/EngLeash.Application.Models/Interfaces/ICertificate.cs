@@ -1,4 +1,4 @@
-public interface ICertificate
+public interface ICertificateService
 {
-	string CreateCertificate(int UserId, int CourseId);
+	Certificate CreateCertificate(int UserId, int CourseId);
 }

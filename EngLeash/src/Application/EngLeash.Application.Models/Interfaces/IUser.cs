@@ -1,6 +1,6 @@
-public interface IUser
+public interface IUserService
 {
-    bool CreateUser(string FirstName, string LastName, string Email, string Password, DateTime RegistrationDate);
-    bool EditUser(int UserId);
+    User CreateUser(string FirstName, string LastName, string Email, string Password, DateTime RegistrationDate);
+    User EditUser(int UserId, string? FirstName, string? LastName, string? Email, string? Password, DateTime? RegistrationDate);
     bool DeleteUser(int UserId);
-    string GetUser(int UserId);
+    User GetUser(int UserId);
