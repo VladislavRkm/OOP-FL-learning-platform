@@ -1,7 +1,7 @@
-public interface ILesson
+public interface ILessonService
 {
-    public void CreateLesson() { }
-    public void EditLesson() { }
-    public void DeleteLesson() { }
-    public void GetLesson() { }
+    Lesson CreateLesson(string title, string content, int courseId);
+    Lesson EditLesson(int lessonId, string title, string content, int courseId);
+    bool DeleteLesson(int lessonId);
+    Lesson GetLesson(int lessonId);
 }
