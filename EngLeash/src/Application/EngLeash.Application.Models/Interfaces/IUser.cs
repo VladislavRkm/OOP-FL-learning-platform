@@ -1,7 +1,6 @@
-public interface IUser
+public interface IUserService
 {
-    public void CreateUser() { }
-    public void EditUser() { }
-    public void DeleteUser() { }
-    public void GetUser() { }
-}
+    User CreateUser(string FirstName, string LastName, string Email, string Password, DateTime RegistrationDate);
+    User EditUser(int UserId, string? FirstName, string? LastName, string? Email, string? Password, DateTime? RegistrationDate);
+    bool DeleteUser(int UserId);
+    User GetUser(int UserId);

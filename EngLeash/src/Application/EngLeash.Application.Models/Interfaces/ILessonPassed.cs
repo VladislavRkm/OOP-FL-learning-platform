@@ -1,4 +1,4 @@
-public interface ILessonPassed
+public interface ILessonPassedService
 {
-	public void PassTheLesson() { }
+	LessonPassed PassTheLesson(int LessonId, int UserId, DateTime LessonPassedDate);
 }
