@@ -359,9 +359,3 @@ FodyWeavers.xsd
 /.vs
 
 .idea/
-/EngLeash/src/Application/EngLeash.Application/EngLeash.Application.csproj
-/EngLeash/src/Application/EngLeash.Application.Abstractions/EngLeash.Application.Abstractions.csproj
-/EngLeash/src/Application/EngLeash.Application.Contracts/EngLeash.Application.Contracts.csproj
-/EngLeash/src/Application/EngLeash.Application.Models/EngLeash.Application.Models.csproj
-/EngLeash/src/EngLeash/EngLeash.csproj
-/EngLeash/src/Presentation/EngLeash.Presentation.Http/EngLeash.Presentation.Http.csproj
