@@ -4,3 +4,4 @@ public interface IUserService
     User EditUser(int UserId, string? FirstName, string? LastName, string? Email, string? Password, DateTime? RegistrationDate);
     bool DeleteUser(int UserId);
     User GetUser(int UserId);
+}
