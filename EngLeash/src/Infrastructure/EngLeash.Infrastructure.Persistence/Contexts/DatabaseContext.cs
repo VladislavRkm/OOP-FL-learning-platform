@@ -38,13 +38,4 @@ public class DatabaseContext : DbContext
 
         modelBuilder.ApplyConfigurationsFromAssembly(typeof(DatabaseContext).Assembly);
     }
-
-    protected override void ConfigureConventions(ModelConfigurationBuilder configurationBuilder)
-    {
-        configurationBuilder.Properties<Points>().HaveConversion<PointsValueConverter>();
-        configurationBuilder.Properties<Fraction>().HaveConversion<FractionValueConverter>();
-        configurationBuilder.Properties<TimeSpan>().HaveConversion<TimeSpanConverter>();
-
-        configurationBuilder.Properties<SpbDateTime>().HaveConversion<SpbDateTimeValueConverter>();
-    }
 }
