@@ -6,7 +6,10 @@ public static class ServiceCollectionExtensions
 {
     public static IServiceCollection AddApplication(this IServiceCollection collection)
     {
-        // TODO: add services
+        collection.AddScoped<ILessonService, LessonService>();
+        collection.AddScoped<ICertificateService, CertificateService>();
+        collection.AddScoped<ICourseService, CourseService>();
+        collection.AddScoped<IUserService, UserService>();
         return collection;
     }
 }
