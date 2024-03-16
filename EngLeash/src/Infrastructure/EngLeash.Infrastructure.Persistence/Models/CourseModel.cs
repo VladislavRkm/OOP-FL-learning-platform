@@ -1,5 +1,5 @@
-namespace EngLeash.Application.Models.Entities;
-public class Course
+﻿namespace EngLeash.Infrastructure.Persistence.Models;
+public class CourseModel
 {
     public int CourseId { get; set; }
 
@@ -7,7 +7,7 @@ public class Course
 
     public string? Description { get; set; }
 
-    public User? AuthorId { get; set; }
+    public UserModel? AuthorId { get; set; }
 
     public string? LanguageCode { get; set; }
 

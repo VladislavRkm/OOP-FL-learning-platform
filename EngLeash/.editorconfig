@@ -567,21 +567,3 @@ csharp_wrap_chained_method_calls = chop_if_long
 # ReSharper properties
 resharper_csharp_wrap_after_declaration_lpar = true
 resharper_csharp_wrap_parameters_style = chop_if_long
-[*.cs]
-csharp_using_directive_placement = outside_namespace:warning
-csharp_prefer_simple_using_statement = true:warning
-csharp_prefer_braces = when_multiline:warning
-csharp_style_namespace_declarations = file_scoped:warning
-csharp_style_prefer_method_group_conversion = true:silent
-csharp_style_prefer_top_level_statements = true:silent
-csharp_style_prefer_primary_constructors = true:suggestion
-csharp_style_expression_bodied_methods = false:suggestion
-csharp_style_expression_bodied_constructors = false:warning
-csharp_style_expression_bodied_operators = when_on_single_line:suggestion
-csharp_style_expression_bodied_properties = when_on_single_line:warning
-csharp_style_expression_bodied_indexers = when_on_single_line:suggestion
-csharp_style_expression_bodied_accessors = when_on_single_line:suggestion
-csharp_style_expression_bodied_lambdas = true:suggestion
-csharp_indent_labels = no_change
-csharp_style_expression_bodied_local_functions = false:suggestion
-csharp_space_around_binary_operators = before_and_after

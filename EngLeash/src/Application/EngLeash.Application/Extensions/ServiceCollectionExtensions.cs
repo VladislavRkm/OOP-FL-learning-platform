@@ -1,6 +1,6 @@
-namespace EngLeash.Application.Extensions;
-
 using Microsoft.Extensions.DependencyInjection;
+
+namespace EngLeash.Application.Extensions;
 
 public static class ServiceCollectionExtensions
 {
