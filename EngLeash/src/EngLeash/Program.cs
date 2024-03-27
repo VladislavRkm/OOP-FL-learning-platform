@@ -1,10 +1,10 @@
 #pragma warning disable CA1506
 
-using Itmo.Dev.Platform.Common.Extensions;
-using Itmo.Dev.Platform.Logging.Extensions;
 using EngLeash.Application.Extensions;
 using EngLeash.Infrastructure.Persistence.Extensions;
 using EngLeash.Presentation.Http.Extensions;
+using Itmo.Dev.Platform.Common.Extensions;
+using Itmo.Dev.Platform.Logging.Extensions;
 using Microsoft.Extensions.Options;
 using Newtonsoft.Json;
 
@@ -16,7 +16,7 @@ builder.Services.AddOptions<JsonSerializerSettings>();
 builder.Services.AddSingleton(sp => sp.GetRequiredService<IOptions<JsonSerializerSettings>>().Value);
 
 builder.Services.AddApplication();
-builder.Services.AddInfrastructurePersistence();
+builder.Services.AddInfrastructurePersistence(builder.Configuration);
 builder.Services
     .AddControllers()
     .AddNewtonsoftJson()
