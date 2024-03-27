@@ -1,6 +1,7 @@
-using EngLeash.Application.Abstractions.Persistence;
+using EngLeash.Application.Abstractions.Persistence.Repositories;
 using EngLeash.Infrastructure.Persistence.Migrations;
 using EngLeash.Infrastructure.Persistence.Plugins;
+using EngLeash.Infrastructure.Persistence.Repositories;
 using Itmo.Dev.Platform.Postgres.Extensions;
 using Itmo.Dev.Platform.Postgres.Plugins;
 using Microsoft.Extensions.Configuration;
@@ -19,7 +20,11 @@ public static class ServiceCollectionExtensions
         collection.AddHostedService<MigrationRunnerService>();
 
         // TODO: add repositories
-        collection.AddScoped<IPersistenceContext, PersistenceContext>();
+        collection.AddScoped<ICertificateRepository, CertificateRepository>();
+        collection.AddScoped<ICourseRepository, CourseRepository>();
+        collection.AddScoped<ILessonPassedRepository, LessonPassedRepository>();
+        collection.AddScoped<ILessonRepository, LessonRepository>();
+        collection.AddScoped<IUserRepository, UserRepository>();
 
         return collection;
     }

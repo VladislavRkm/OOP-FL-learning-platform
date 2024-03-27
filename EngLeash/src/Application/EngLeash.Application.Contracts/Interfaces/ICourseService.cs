@@ -1,6 +1,6 @@
 ﻿using EngLeash.Application.Models.Entities;
 
-namespace EngLeash.Application.Models.Interfaces;
+namespace EngLeash.Application.Contracts.Interfaces;
 public interface ICourseService
 {
     Course CreateCourse(string title, string description, int authorId, string languageCode, DateTime createdDate, string difficultyLevel);

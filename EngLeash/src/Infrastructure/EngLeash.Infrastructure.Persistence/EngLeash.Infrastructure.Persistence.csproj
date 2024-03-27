@@ -2,6 +2,7 @@
 
     <ItemGroup>
         <ProjectReference Include="..\..\Application\EngLeash.Application.Abstractions\EngLeash.Application.Abstractions.csproj" />
+        <ProjectReference Include="..\..\Application\EngLeash.Application.Contracts\EngLeash.Application.Contracts.csproj" />
     </ItemGroup>
 
     <ItemGroup>

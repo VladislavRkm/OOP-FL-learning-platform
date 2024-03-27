@@ -1,6 +1,6 @@
 ﻿using EngLeash.Application.Models.Entities;
 
-namespace EngLeash.Application.Models.Interfaces;
+namespace EngLeash.Application.Contracts.Interfaces;
 
 public interface IUserService
 {

@@ -6,7 +6,10 @@ namespace EngLeash.Infrastructure.Persistence.Contexts;
 
 public class DatabaseContext : DbContext
 {
-    public DatabaseContext(DbContextOptions<DatabaseContext> options) : base(options) { }
+    public DatabaseContext(DbContextOptions<DatabaseContext> options) : base(options)
+    {
+        Database.EnsureCreated();
+    }
 
     protected DatabaseContext(DbContextOptions options) : base(options) { }
 

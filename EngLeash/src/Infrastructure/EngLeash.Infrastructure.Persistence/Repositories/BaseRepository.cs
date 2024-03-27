@@ -1,9 +1,8 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using EngLeash.Infrastructure.Persistence.Contexts;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.ChangeTracking;
-using EngLeash.Infrastructure.Persistence.Contexts;
 
 namespace EngLeash.Infrastructure.Persistence.Repositories;
-
 public abstract class BaseRepository<TEntity, TModel> where TModel : class
 {
     private readonly DatabaseContext _context;
